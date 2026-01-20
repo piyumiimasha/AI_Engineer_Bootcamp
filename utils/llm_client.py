@@ -80,7 +80,8 @@ class LLMClient:
             if not api_key:
                 raise ValueError("OPENAI_API_KEY not found in environment")
             self.client = OpenAI(
-                                api_key=api_key
+                                api_key=api_key,
+                                model = self.model
                                 )
 
         elif self.provider == "google":
@@ -94,7 +95,8 @@ class LLMClient:
             if not api_key:
                 raise ValueError("GROQ_API_KEY not found in environment")
             self.client = Groq(
-                               api_key=api_key
+                               api_key=api_key,
+                               model = self.model
                                )
         else:
             raise ValueError(f"Unsupported provider: {self.provider}")

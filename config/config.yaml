@@ -13,7 +13,7 @@ providers:
   disabled:
     - anthropic
   # Default provider if not specified
-  default: openai
+  default: groq
 
 # ============================================================================
 # Model Selection (references models.yaml)
@@ -23,6 +23,7 @@ models:
   auto_routing: true
   
   # Techniques that trigger reasoning model routing
+  #(reasoning involved when comparing, explaining, or multi-step tasks)
   reasoning_techniques:
     - cot
     - tot
@@ -35,7 +36,7 @@ models:
 # Default LLM Parameters
 # ============================================================================
 defaults:
-  temperature: 0.2
+  temperature: 0.2 #(strict answers)
   max_tokens: 1000
   top_p: 1.0
   
