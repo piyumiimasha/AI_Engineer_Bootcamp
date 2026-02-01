@@ -2579,7 +2579,7 @@ dev = [
 requires-dist = [
     { name = "black", marker = "extra == 'dev'", specifier = ">=23.12.0" },
     { name = "flake8", marker = "extra == 'dev'", specifier = ">=7.0.0" },
-    { name = "google-genai", specifier = ">=1.0.0" },
+    { name = "google-genai", specifier = ">=1.56.0" },
     { name = "groq", specifier = ">=0.4.0" },
     { name = "jsonschema", specifier = ">=4.20.0" },
     { name = "jupyter", specifier = ">=1.0.0" },
