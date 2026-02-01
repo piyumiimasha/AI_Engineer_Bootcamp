@@ -18,8 +18,8 @@ google:
 
 groq:
   general: llama-3.1-8b-instant
-  strong: llama-3.1-70b-versatile
-  reason: deepseek-r1-distill-llama-70b
+  strong: llama-3.3-70b-versatile
+  reason: llama-3.3-70b-versatile  # Groq's DeepSeek reasoning models decommissioned, using strongest general model
 
 # Context Window Reference (approximate)
 # OpenAI gpt-4o-mini: 128K tokens
